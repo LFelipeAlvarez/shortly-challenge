@@ -1,0 +1,281 @@
+main {
+  overflow-x: hidden;
+}
+
+.hero {
+  max-width: 450px;
+}
+
+.hero__img {
+  max-width: 153%;
+}
+
+.article {
+  position: relative;
+  text-align: center;
+}
+
+.article__inner {
+  width: 88%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1100px;
+}
+
+.article--top {
+  .article__inner {
+    padding-bottom: 9.8rem;
+
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap-reverse;
+  }
+
+  .section__title {
+    margin-top: 0;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section--dash {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section--links-list {
+  padding-bottom: 5rem;
+}
+
+.section__title {
+  font-size: 2.2em;
+  font-family: "poppins-bold";
+  line-height: 1em;
+  color: var(--very-dark-blue);
+  margin-bottom: 0;
+}
+
+.section__text {
+  color: var(--grayish-violet);
+  font-size: 0.85em;
+  margin-bottom: 2rem;
+}
+
+.section__text--bigger {
+  font-size: 1em;
+  margin-top: 0;
+}
+
+.form-container {
+  position: absolute;
+  width: 88%;
+  bottom: -76px;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+  background-color: var(--dark-violet);
+  border-radius: 10px;
+  background-image: url("/images/bg-shorten-mobile.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: -15px;
+  z-index: 1;
+
+  max-width: 1100px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form__input {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  min-height: 2.5rem;
+  padding: 0 1rem;
+  font-family: "poppins-medium";
+  color: var(--grayish-violet);
+  border: 2px solid transparent;
+}
+
+.form__input--warning {
+  border: 2px solid var(--red);
+  position: relative;
+}
+
+.form__input--warning::placeholder {
+  color: var(--red);
+}
+
+.form--warning::before {
+  content: "Please add a valid link (https://example.com)";
+  position: absolute;
+  top: 65px;
+  display: block;
+  text-align: left;
+  width: 90%;
+  height: 10px;
+  color: var(--red);
+  font-size: 0.6em;
+  font-style: italic;
+  z-index: 10;
+}
+
+.button--form {
+  outline: none;
+  border: none;
+  font-family: "poppins-bold";
+  letter-spacing: 0.4px;
+  border-radius: 0.3rem;
+  width: 100%;
+  min-height: 2.5rem;
+  transition: background-color 0.2s;
+  border-radius: 10px;
+}
+
+.button--copied {
+  background-color: var(--dark-violet);
+  transition: background-color 0.2s;
+}
+
+.button--copied:hover {
+  background-color: var(--dark-violet);
+}
+
+.article--bottom {
+  background-color: #f8f6fa;
+  padding-bottom: 5rem;
+
+  .article__inner {
+    padding-top: 6rem;
+  }
+}
+
+.section__title--small {
+  font-size: 1.5em;
+}
+
+.links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-height: 700px;
+  overflow-y: auto;
+  scrollbar-color: var(--dark-violet) #e7e7e7;
+  scrollbar-width: thin;
+
+}
+
+.link-card {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.link-card__section {
+  padding: 0.8rem 1rem;
+}
+
+.link-card__section:first-child {
+  border-bottom: 1px solid #e6e5e8;
+}
+
+.link-card__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.85em;
+  text-align: left;
+  overflow-x: hidden;
+}
+
+.link-card__text--shortened {
+  color: var(--cyan);
+  margin-bottom: 0.8rem;
+}
+
+.section--cards {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding-top: 4rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 3.2rem 1.5rem 2rem;
+  position: relative;
+}
+
+.card::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 80px;
+  background-color: var(--cyan);
+  bottom: -80px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card--last::before {
+  height: 0;
+}
+
+.card__icon-container {
+  position: absolute;
+  background-color: var(--dark-violet);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5.5rem;
+  height: 5.5rem;
+  left: 0;
+  right: 0;
+  top: -2.75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card__title {
+  font-size: 1.2em;
+  font-family: "poppins-bold";
+  margin-bottom: 0;
+}
+
+.card__text {
+  color: var(--grayish-violet);
+  font-size: 0.85em;
+}
+
+.banner {
+  background-color: var(--dark-violet);
+  color: #fff;
+  padding: 4.5rem 1rem;
+
+  background-image: url("/images/bg-boost-mobile.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.banner__title {
+  text-align: center;
+}
+
+.banner__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}

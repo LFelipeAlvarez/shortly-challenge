@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+/* min body height */
+body {
+  font-family: "poppins-medium";
+  min-height: 100vh;
+  margin: 0;
+  font-size: 1.125em;
+}
+
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --cyan: hsl(180, 66%, 49%);
+  --dark-violet: hsl(257, 27%, 26%);
+  --red: hsl(0, 87%, 67%);
+  --gray: hsl(0, 0%, 75%);
+  --grayish-violet: hsl(257, 7%, 63%);
+  --very-dark-blue: hsl(255, 11%, 22%);
+  --very-dark-violet: hsl(260, 8%, 14%);
+}
+
+@font-face {
+  font-family: "poppins-medium";
+  src: url("/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "poppins-bold";
+  src: url("/fonts/Poppins-Bold.ttf");
+}

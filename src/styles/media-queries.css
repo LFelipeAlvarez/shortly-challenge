@@ -1,0 +1,263 @@
+@media (min-width: 768px) {
+  .hero__img {
+    max-width: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__inner {
+    gap: 2rem;
+  }
+
+  .header__menu-button {
+    display: none;
+  }
+
+  .nav {
+    background-color: initial;
+    opacity: 1;
+    position: relative;
+    top: initial;
+    width: initial;
+    padding: initial;
+    margin-left: initial;
+    margin-right: initial;
+    flex-grow: 1;
+    visibility: visible;
+  }
+
+  .nav__items {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav__item--border::before {
+    display: none;
+  }
+
+  .nav__group {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .nav__link {
+    color: var(--grayish-violet);
+    font-family: "poppins-bold";
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--very-dark-violet);
+      background-color: #fff;
+    }
+  }
+
+  .button {
+    transition: filter 0.2s;
+  }
+
+  .button:hover {
+    filter: brightness(110%);
+  }
+
+  .button--hero {
+    margin-left: initial;
+  }
+
+  .button--header {
+    color: #fff;
+    width: 10rem;
+  }
+
+  .article--top {
+    .article__inner {
+      padding-top: 3rem;
+      justify-content: space-between;
+      gap: 0;
+    }
+
+    .section {
+      text-align: left;
+      max-width: 400px;
+    }
+
+    .section__title {
+      line-height: 1.2em;
+    }
+  }
+
+  .section__text--bigger {
+    font-size: 1.3em;
+  }
+
+  .form-container {
+    padding: 3rem;
+    background-image: url("/images/bg-shorten-desktop.svg");
+  }
+
+  .form {
+    flex-direction: row;
+
+    .form__input {
+      flex-grow: 2;
+      height: 3.5rem;
+      font-size: 1em;
+    }
+
+    .button--form {
+      font-size: 1em;
+      width: 10rem;
+      margin-left: initial;
+      margin-right: initial;
+    }
+  }
+
+  .form--warning::before {
+    top: 106px;
+  }
+
+  .links-list {
+    gap: 1rem;
+  }
+
+  .link-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem;
+  }
+
+  .link-card__section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  .link-card__section--right {
+    justify-content: end;
+    gap: 1rem;
+  }
+
+  .link-card__section:first-child {
+    border-bottom: none;
+  }
+
+  .link-card__text {
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+
+  .button--list {
+    width: 6rem;
+    min-width: 6rem;
+    margin-left: initial;
+    margin-right: initial;
+    gap: 1rem;
+  }
+
+  .section--cards {
+    flex-direction: row;
+    gap: 1.8rem;
+    padding-bottom: 5rem;
+  }
+
+  .card {
+    text-align: left;
+    padding-left: 1.7rem;
+    padding-right: 2.1rem;
+
+    &:nth-child(2) {
+      margin-top: 2.5rem;
+      margin-bottom: -2.5rem;
+    }
+
+    &:nth-child(3) {
+      margin-top: 5rem;
+      margin-bottom: -5rem;
+    }
+  }
+
+  .card__icon-container {
+    margin-left: initial;
+    margin-right: initial;
+    left: 35px;
+  }
+
+  .card:first-child::before {
+    height: 8px;
+    width: 500px;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 1.25rem;
+    left: initial;
+    right: -500px;
+  }
+
+  .card:nth-child(2):before {
+    display: none;
+  }
+
+  .banner {
+    background-image: url("/images/bg-boost-desktop.svg");
+    background-size: cover;
+  }
+
+  .footer__inner {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+  }
+
+  .footer__logo-container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .footer__section {
+    padding-top: 0;
+  }
+
+  .footer__title {
+    margin-top: 0;
+  }
+
+  .footer__nav {
+    display: flex;
+    gap: 4rem;
+    padding-left: 100px;
+  }
+
+  .footer__link {
+    transition: color 0.2s;
+  }
+
+  .footer__link:hover {
+    color: var(--cyan);
+  }
+
+  .footer__social {
+    padding-bottom: 0;
+    padding-top: 0;
+    align-items: start;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .article--top {
+    .section {
+      text-align: left;
+      max-width: 600px;
+    }
+
+    .section__title {
+      font-size: 4.5em;
+      line-height: 1.2em;
+    }
+  }
+
+  .section__text--bigger {
+    font-size: 1.3em;
+  }
+}
