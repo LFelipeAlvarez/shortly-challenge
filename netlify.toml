@@ -1,6 +1,4 @@
-[[redirects]]
-  from = "https://api.short.io/links"
-  to = "https://api.short.io/links"
-  status = 200
-  force = true
-  headers = {authorization = "sk_mPLmRVYAfBxhCfqr"}
+[[headers]]
+   for = "/*"
+   [headers.values]
+      Access-Control-Allow-Origin = "*"
