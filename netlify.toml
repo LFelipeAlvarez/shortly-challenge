@@ -1,6 +1,5 @@
 [[redirects]]
-  from = "/index"
-  to = "https://api.short.io/links"
+  from = "/"
+  to = "https://api.short.io/links:splat"
   status = 200
   force = true
-  headers = {Xauthorization = "sk_mPLmRVYAfBxhCfqr", content-type = "application/json"}
