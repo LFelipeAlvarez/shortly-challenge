@@ -3,3 +3,4 @@
   to = "https://api.short.io/links:splat"
   status = 200
   force = true
+  headers = {authorization = "sk_mPLmRVYAfBxhCfqr"}
