@@ -18,7 +18,7 @@ export const getShortenedUrl = async (originalURL: string): Promise<ApiResponse>
     domain: "d9kg.short.gy",
   });
 
-  const response = await fetch(endPoint, { headers, body, method: "POST" });
+  const response = await fetch('/api/getlinks', { headers, body, method: "POST" });
   if (!response.ok) {
     alert("A website error has occurred. Sorry for the temporary inconvenience.");
 
