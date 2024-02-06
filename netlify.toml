@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/"
-  to = "https://api.short.io/links:splat"
-  status = 200
-  force = true
