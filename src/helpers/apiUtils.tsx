@@ -8,7 +8,7 @@ type ApiResponse = ApiResponseNeeded & {
 };
 
 const endPoint = "https://api.short.io/links";
-const apikey = 'sk_mPLmRVYAfBxhCfqr' || import.meta.env.VITE_REBRANDLY_API_KEY;
+const apikey = import.meta.env.VITE_REBRANDLY_API_KEY;
 const headers = { authorization: apikey, "content-type": "application/json" };
 
 export const getShortenedUrl = async (originalURL: string): Promise<ApiResponse> => {
