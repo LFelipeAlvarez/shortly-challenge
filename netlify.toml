@@ -1,6 +1,10 @@
 [[redirects]]
-  from = "/home"
+  from = "/getlink"
   to = "https://api.short.io/links"
   status = 200
   force = true
-  headers = {authorization = "sk_mPLmRVYAfBxhCfqr", content-type = "application/json"}
+  headers = {X-From = "Netlify"}
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
